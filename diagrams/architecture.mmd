@@ -1,0 +1,28 @@
+flowchart TB
+    subgraph ClientZone["Client side"]
+        C1["nc command"]
+        C2["smart_client.py"]
+        C3["Linux Mint VM"]
+        C4["Windows PowerShell SCP"]
+    end
+
+    subgraph ServerZone["Ubuntu Server VM 192.168.56.101"]
+        B["basic_server.py :9090"]
+        T["threaded_server.py :9091"]
+        F["ftp_server.py :9092"]
+        SSH["OpenSSH :22"]
+    end
+
+    W["server_workspace/public"]
+    L["logs/server.log"]
+
+    C1 --> B
+    C1 --> T
+    C2 --> F
+    C3 --> F
+    C4 --> SSH
+    B --> W
+    T --> W
+    F --> W
+    F --> L
+    SSH --> W
