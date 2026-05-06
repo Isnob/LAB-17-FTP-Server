@@ -1,4 +1,4 @@
-# LAB17 — Учебный FTP-like сервер на Python: TCP, файлы, авторизация, SCP и безопасность
+# LAB17  Учебный FTP-like сервер на Python: TCP, файлы, авторизация, SCP и безопасность
 
 **Уровень:** beginner → advanced  
 **ОС сервера:** Ubuntu 24.04 inside Oracle VM VirtualBox  
@@ -264,7 +264,7 @@ echo "mkdir student lab17 docs" | nc 127.0.0.1 9092
 
 ---
 
-## 9. Task 1 — Basic TCP server на порту 9090
+## 9. Task 1  Basic TCP server на порту 9090
 
 ### Идея перед кодом
 
@@ -367,7 +367,7 @@ echo "ls" | nc 127.0.0.1 9090
 
 ---
 
-## 10. Task 2 — Threaded server на порту 9091
+## 10. Task 2  Threaded server на порту 9091
 
 ### Идея перед кодом
 
@@ -399,7 +399,7 @@ echo "cat note.txt" | nc 127.0.0.1 9091
 
 ---
 
-## 11. Task 3 — Final FTP-like server на порту 9092
+## 11. Task 3  Final FTP-like server на порту 9092
 
 ### Идея перед кодом
 
@@ -484,7 +484,7 @@ cat docs/note.txt
 
 ---
 
-## 13. Task 4 — Smart client
+## 13. Task 4  Smart client
 
 ### Идея перед кодом
 
@@ -533,7 +533,7 @@ Client closed.
 
 ---
 
-## 14. Task 5 — Проверка из Linux Mint VM
+## 14. Task 5  Проверка из Linux Mint VM
 
 ### Зачем нужна Linux Mint VM
 
@@ -577,11 +577,11 @@ sudo ufw allow 9092/tcp
 
 ---
 
-## 15. Task 6 — Использование SCP для реальной передачи файлов
+## 15. Task 6  Использование SCP для реальной передачи файлов
 
 ### Что такое SCP
 
-`scp` — это команда для безопасного копирования файлов между машинами через SSH. В отличие от нашего учебного TCP-сервера, `scp` использует OpenSSH, шифрование, системных пользователей Linux и порт `22`.
+`scp`  это команда для безопасного копирования файлов между машинами через SSH. В отличие от нашего учебного TCP-сервера, `scp` использует OpenSSH, шифрование, системных пользователей Linux и порт `22`.
 
 Документация: https://man.openbsd.org/scp.1  
 Ubuntu OpenSSH Server: https://ubuntu.com/server/docs/openssh-server
