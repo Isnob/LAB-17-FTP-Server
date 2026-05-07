@@ -1,0 +1,6 @@
+A learning TCP file server is a simple program that opens a socket, accepts a connection, 
+reads bytes, and writes them to a file. Its purpose is to show how IP addresses, ports, 
+TCP connections, send/recv, and basic client-server logic work.
+
+SCP is a real file transfer tool built on top of SSH. It provides authentication, 
+encryption, access control, and uses existing system users and file permissions.
